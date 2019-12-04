@@ -89,7 +89,12 @@ console.log(difference)
  * Console.log `product` to test your code.
 */
 
+function multiply(num1,num2){
+	return num1 * num2 ;
+}
 
+var product = multiply(1,2)
+console.log(product)
 
 
 /*
@@ -106,7 +111,12 @@ console.log(difference)
  * Console.log `quotient` to test your code.
 */
 
+function divide(num1,num2){
+	return num1 / num2 ;
+}
 
+var quotient = divide(1,2)
+console.log(quotient)
 
 /*
  * #6
@@ -120,9 +130,11 @@ console.log(difference)
  * Console.log your result.
 */
 
+function checkSum (x){
+	return 'Mariah Carey has been married '+ +x +' amount of times.'
+}
 
-
-
+console.log(checkSum(2));
 
 /*
  * #7
@@ -137,7 +149,11 @@ console.log(difference)
  * Console.log your results.
 */ 
 
+function checkDifference (x){
+	return 'Last night I dreamt that I ate '+ +x +' Taco Bell soft tacos. '
+}
 
+console.log(checkDifference(2));
 
 /*
  * #8
@@ -150,6 +166,11 @@ console.log(difference)
  * Console.log your result.  
 */
 
+function checkProduct (){
+	return 67*98
+}
+
+console.log(checkProduct());
 
 /*
  * #9
@@ -162,7 +183,11 @@ console.log(difference)
  * Console.log your result.  
 */
 
+function checkQuotient (){
+	return 67/98
+}
 
+console.log(checkQuotient());
 
 /*
  * #10
