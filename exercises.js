@@ -138,6 +138,7 @@ console.log(checkSum(2));
 
 /*
  * #7
+
  * Function - checkDifference
  * Create a function named `checkDifference` which will take a parameter `x`.
  *
@@ -207,19 +208,15 @@ console.log(checkQuotient());
  * This function will add the first two parameters together. Then with the sum of that operation, subtract it from the third parameter. PLEASE USE YOUR PREVIOUS FUNCTIONS FOR THIS EXERCISE. 
  * Console.log your result.
 */ 
-
-var bango3
-var bango4
-var bango5
+var Number = bango3;
+var Number = bango4;
+var Number = bango5;
 
 function addThenSubtract(num1,num2,num3){
-	return num1 + num2 - num3;
+	return num1+num2-num3;
 }
 
-var total = addThenSubtract(1,2,3);
-console.log(total)
-
-
+var total 
 /*
  * #11
  * Function - multiplyThenDivide
@@ -234,6 +231,10 @@ console.log(total)
  * Console.log your result.
 */ 
 
+
+
+
+
 var bango3
 var bango4
 var bango5
@@ -244,8 +245,6 @@ function multiplyThenDivide(num1,num2,num3){
 
 var total = multiplyThenDivide(1,2,3);
 console.log(total)
-
-
 
 
 /*
@@ -300,6 +299,8 @@ function shoeSize (inches){
 	return inches * 2.54
 }
 
+console.log(shoeSize(4))
+
 
 /*
  * #15
@@ -311,7 +312,11 @@ function shoeSize (inches){
  * Example output: "BELIEVE YOU CAN AND YOU'RE HALFWAY THERE."
 */
  
+function allCaps (str){
+	return str.toUpperCase()
+}
 
+console.log(allCaps("believe you can and you're halfway there."))
 
 /*
  * #16
@@ -321,8 +326,11 @@ function shoeSize (inches){
  * Console.log your result.
 */
 
+function oneCap (str){
+	return str.charAt(0).toUpperCase()+str.slice(1);
+}
 
-
+console.log(oneCap("believe you can and you're halfway there."))
 /*
  * #17
  * Function - verifyDrinkingAge
@@ -341,3 +349,9 @@ function shoeSize (inches){
  * Function - throwParty
  * Create a function named throwParty. This function will check the value stored in the `canDrink` variable in the previous exercise. If the value is true, it will return the message "Cheee Hoo! We going to da party!" If false, then it will return the message "Meh, see you at Starbucks." Store the return value to a variable named `canParty`. Console.log your result.
  */
+
+
+
+
+
+
