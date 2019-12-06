@@ -138,7 +138,6 @@ console.log(checkSum(2));
 
 /*
  * #7
-
  * Function - checkDifference
  * Create a function named `checkDifference` which will take a parameter `x`.
  *
@@ -209,7 +208,16 @@ console.log(checkQuotient());
  * Console.log your result.
 */ 
 
+var bango3
+var bango4
+var bango5
 
+function addThenSubtract(num1,num2,num3){
+	return num1 + num2 - num3;
+}
+
+var total = addThenSubtract(1,2,3);
+console.log(total)
 
 
 /*
@@ -226,6 +234,16 @@ console.log(checkQuotient());
  * Console.log your result.
 */ 
 
+var bango3
+var bango4
+var bango5
+
+function multiplyThenDivide(num1,num2,num3){
+	return num1 * num2 / num3;
+}
+
+var total = multiplyThenDivide(1,2,3);
+console.log(total)
 
 
 
@@ -241,9 +259,12 @@ console.log(checkQuotient());
  *
  *  This function `returns` back a string which represents someone's full name. Invoke this function by passing in your first  and last name into the function. Store the return value into a variable named `myFullName` and console.log this variable to show your result.
 */
+function createFullName(firstName,lastName){
+	return 'firstName' + 'lastName';
+}
 
-
-
+var myFullName = createFullName('Joss Mikeal','Picardal')
+console.log(myFullName)
 /*
  * #13 
  * Function - eatFood
@@ -257,8 +278,11 @@ console.log(checkQuotient());
  * This function will use the previous `createFullName` function above to create a message. For example, if you invoked the function like this: eatFood("Biggie", "Smalls", "Won Ton Soup"); it will display the message "Biggie Smalls eats Won Ton Soup everyday for breakfast."
  * Console.log your result.
  */
+function eatFood(firstName,LastName,food){
+	return 'firstName'+'LastName'+'likes'+' '+'to'+' '+'eat'+' '+'food'
+}
 
-
+var favfood = eatFood('Joss Mikeal','Picardal','Pizza')
 
 /************** ENGAGE HYPERDRIVE **************/
 /* No more training wheels! For the exercises #14-18, use the experience you've
@@ -272,7 +296,9 @@ console.log(checkQuotient());
  * Create a function that will take in a parameter named `inches`. This function will convert inches to centimeters(cm).
  * Console.log your result. 
 */
-
+function shoeSize (inches){
+	return inches * 2.54
+}
 
 
 /*
@@ -315,9 +341,3 @@ console.log(checkQuotient());
  * Function - throwParty
  * Create a function named throwParty. This function will check the value stored in the `canDrink` variable in the previous exercise. If the value is true, it will return the message "Cheee Hoo! We going to da party!" If false, then it will return the message "Meh, see you at Starbucks." Store the return value to a variable named `canParty`. Console.log your result.
  */
-
-
-
-
-
-
