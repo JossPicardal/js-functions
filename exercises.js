@@ -26,8 +26,8 @@ console.log(testGreeting); // printing the output value of the function.
  *
  * These two variables will be used to invoke the functions #2 - #5.
 */ 
-var bango1
-var bango2
+var bango1 = 2;
+var bango2 = 3;
 
 /*
  * #2
@@ -48,7 +48,7 @@ function add(num1,num2){
 	return num1 + num2 ;
 }
 
-var sum = add(1,2)
+var sum = add(bango1,bango2)
 console.log(sum)
 
 /*
@@ -208,15 +208,16 @@ console.log(checkQuotient());
  * This function will add the first two parameters together. Then with the sum of that operation, subtract it from the third parameter. PLEASE USE YOUR PREVIOUS FUNCTIONS FOR THIS EXERCISE. 
  * Console.log your result.
 */ 
-var Number = bango3;
-var Number = bango4;
-var Number = bango5;
+var Number = bango3 = 1;
+var Number = bango4 = 2;
+var Number = bango5 = 3;
 
 function addThenSubtract(num1,num2,num3){
 	return num1+num2-num3;
 }
 
-var total 
+var total  = addThenSubtract(bango3,bango4,bango5);
+console.log(total)
 /*
  * #11
  * Function - multiplyThenDivide
@@ -233,17 +234,11 @@ var total
 
 
 
-
-
-var bango3
-var bango4
-var bango5
-
 function multiplyThenDivide(num1,num2,num3){
 	return num1 * num2 / num3;
 }
 
-var total = multiplyThenDivide(1,2,3);
+var total = multiplyThenDivide(bango3,bango4,bango5);
 console.log(total)
 
 
@@ -259,7 +254,7 @@ console.log(total)
  *  This function `returns` back a string which represents someone's full name. Invoke this function by passing in your first  and last name into the function. Store the return value into a variable named `myFullName` and console.log this variable to show your result.
 */
 function createFullName(firstName,lastName){
-	return 'firstName' + 'lastName';
+	return firstName + lastName;
 }
 
 var myFullName = createFullName('Joss Mikeal','Picardal')
@@ -278,10 +273,11 @@ console.log(myFullName)
  * Console.log your result.
  */
 function eatFood(firstName,LastName,food){
-	return 'firstName'+'LastName'+'likes'+' '+'to'+' '+'eat'+' '+'food'
+	return firstName+LastName+' '+'likes'+' '+'to'+' '+'eat'+' '+food
 }
 
 var favfood = eatFood('Joss Mikeal','Picardal','Pizza')
+console.log(favfood);
 
 /************** ENGAGE HYPERDRIVE **************/
 /* No more training wheels! For the exercises #14-18, use the experience you've
@@ -341,7 +337,15 @@ console.log(oneCap("believe you can and you're halfway there."))
  * Call this function and pass in a number value.
  * Store the return value to a variable named `canDrink`. Console.log your result.
  */
-
+ function verifyDrinkingAge(age){
+ 	if (age>=21){
+ 		return true;
+ 	}else {
+ 		return false;
+ 	}
+ }
+ var canDrink = verifyDrinkingAge(16);
+ console.log(canDrink)
 
 
 /**
@@ -349,8 +353,14 @@ console.log(oneCap("believe you can and you're halfway there."))
  * Function - throwParty
  * Create a function named throwParty. This function will check the value stored in the `canDrink` variable in the previous exercise. If the value is true, it will return the message "Cheee Hoo! We going to da party!" If false, then it will return the message "Meh, see you at Starbucks." Store the return value to a variable named `canParty`. Console.log your result.
  */
-
-
+ function throwParty(canDrink){
+ 	if (canDrink === true) {
+ 		console.log('Cheee Hoo! We going to da party!')
+ 	} else {
+ 		console.log('Meh, see you at Starbucks.')
+ 	}
+ }
+var canParty=throwParty(canDrink);
 
 
 
